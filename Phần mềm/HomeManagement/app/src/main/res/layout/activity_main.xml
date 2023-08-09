@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/drawerLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/liv"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/state_off" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_mic"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mic"/>
+
+                <TextView
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/txtMic"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ra lệnh cho tôi đi..." />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:background="@drawable/state_off"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:gravity="center"
+                            android:text="LIGHT CONTROL"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <Button
+                                android:id="@+id/light1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="12dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/black"
+                                android:background="@drawable/button_bg_light"
+                                android:text="Bật đèn 1"
+                                android:textColor="#251616"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/light2"
+                                android:text="Bật đèn 2"
+                                android:textColor="#251616"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:background="@drawable/button_bg_light"
+                                android:backgroundTint="@color/off"
+                                android:layout_margin="12dp"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+                            <Button
+                                android:id="@+id/light3"
+                                android:text="Bật đèn 3"
+                                android:textStyle="bold"
+                                android:background="@drawable/button_bg_light"
+                                android:textColor="#251616"
+                                android:textSize="16sp"
+                                android:backgroundTint="@color/off"
+                                android:layout_weight="1"
+                                android:layout_margin="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:id="@+id/light4"
+                                android:text="Bật đèn 4"
+                                android:background="@drawable/button_bg_light"
+                                android:textColor="#251616"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:backgroundTint="@color/off"
+                                android:layout_weight="1"
+                                android:layout_margin="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/state_off"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="2">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/temp"
+                                    android:id="@+id/btnUpdateTempHum"
+                                    android:layout_marginLeft="-22dp"
+                                    android:layout_weight="1"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="0.0 °C"
+                                    android:textSize="18dp"
+                                    android:textColor="#fff"
+                                    android:textStyle="bold"
+                                    android:id="@+id/tempD"
+                                    android:layout_weight="1"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:background="@color/black"></LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="2">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/hum2"
+                                    android:layout_marginLeft="-22dp"
+                                    android:layout_weight="1"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="60 %"
+                                    android:textSize="18dp"
+                                    android:id="@+id/humD"
+                                    android:textColor="#fff"
+                                    android:textStyle="bold"
+                                    android:layout_weight="1"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/ln_door"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/state_off"
+                            android:orientation="vertical">
+
+                            <Switch
+                                android:id="@+id/swDoor"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:minHeight="48dp"
+                                android:padding="8dp"
+                                android:text="CỬA ĐÓNG"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center"
+                    android:text="Designed by Dat Vina"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/layout_header_navigation"
+            app:menu="@menu/menu_navigation"
+            android:id="@+id/nav_view">
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

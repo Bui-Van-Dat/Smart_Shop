@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/nav_history"
+        android:title="History"
+        android:icon="@drawable/ic_history"/>
+    </group>
+    <item
+        android:title="@string/nav_hr">
+        <menu>
+            <item android:id="@+id/nav_hr_m"
+                android:title="@string/nav_hr_manager"
+                android:icon="@drawable/ic_admin"/>
+            <item android:id="@+id/nav_hr_e"
+                android:title="@string/nav_hr_employee"
+                android:icon="@drawable/ic_user"/>
+            <item android:id="@+id/nav_hr_leave"
+                android:title="@string/nav_hr_leave"
+                android:icon="@drawable/ic_leave"/>
+        </menu>
+    </item>
+    <item
+        android:title="@string/nav_acc">
+        <menu>
+            <item android:id="@+id/nav_profile"
+                android:title="@string/nav_profile"
+                android:icon="@drawable/ic_profile"/>
+            <item android:id="@+id/nav_logout"
+                android:title="@string/nav_logout"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+    </item>
+
+</menu>

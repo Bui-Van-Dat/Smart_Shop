@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Home Management</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_acc">Account</string>
+    <string name="nav_profile">My Profile</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_hr">Hrm</string>
+    <string name="nav_hr_manager">Manager</string>
+    <string name="nav_hr_employee">Employee</string>
+    <string name="nav_hr_leave">Leave</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
